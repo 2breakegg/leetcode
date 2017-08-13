@@ -25,8 +25,8 @@
 var isPalindrome = function(x) {
     if(!x) return true;
     if(x<0)return false;
-    let length=Math.round(Math.log(Math.abs(x))/Math.LN10)+1;
-    length= (Math.abs(x)/Math.pow(10,length))>=0.1 ? length:length-1;
+    let length=Math.round(Math.log(x)/Math.LN10)+1;
+    length= (x/Math.pow(10,length))>=0.1 ? length:length-1;
 
     for(let i=0; i<length;i++){
         // console.log(length, Math.floor(x/Math.pow(10,i)%10),Math.floor(x/Math.pow(10,length-1-i)%10));
