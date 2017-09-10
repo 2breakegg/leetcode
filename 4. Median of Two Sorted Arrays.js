@@ -37,16 +37,16 @@ var findMedianSortedArrays = function(nums1, nums2) {
     if(i+j>length1){
         return (nums3[length1-1]+nums3[length2-1])/2;
     }else{
-        console.log(nums3);
+        // console.log(nums3);
         nums3=nums3.concat(nums1.splice(i));
-                console.log(nums3);
+                // console.log(nums3);
 
         nums3=nums3.concat(nums2.splice(j));
-                console.log(nums3);
-        console.log(length1);
-        console.log(length2);
+        //         console.log(nums3);
+        // console.log(length1);
+        // console.log(length2);
 
-        console.log(nums3[length1-1]+"+"+nums3[length2-1]);
+        // console.log(nums3[length1-1]+"+"+nums3[length2-1]);
 
         return (nums3[length1-1]+nums3[length2-1])/2;
     }
