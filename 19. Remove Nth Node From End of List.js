@@ -6,7 +6,7 @@
  * }
  */
 /**
- * @param {ListNode} head
+ * @param {ListNode } head
  * @param {number} n
  * @return {ListNode}
  */
